@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Card directives</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body ng-app="app">
+
+    <div class="container" ng-controller="MainController as vm">
+
+      <movie-card ng-repeat="movie in vm.movies" name="{{ movie }}"></movie-card>  <!-- Add from database in Controller -->
+
+    </div>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
